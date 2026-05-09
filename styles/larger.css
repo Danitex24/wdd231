@@ -1,0 +1,36 @@
+@media (min-width: 40rem) {
+  #menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    background: transparent;
+    padding: 0;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .home-grid,
+  .spotlights,
+  .directory-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .discover-layout {
+    grid-template-columns: 300px 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .join-layout {
+    grid-template-columns: 1.3fr .9fr;
+    align-items: start;
+  }
+}
