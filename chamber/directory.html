@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Abuja Chamber of Commerce | Member Directory</title>
+  <meta name="description" content="Browse the official directory of businesses and organizations that are members of the Abuja Chamber of Commerce in Abuja, Nigeria.">
+  <meta name="author" content="Daniel Abughdyer">
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="alternate icon" href="images/favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abuja Chamber of Commerce | Member Directory">
+  <meta property="og:description" content="Browse the official directory of businesses and organizations that are members of the Abuja Chamber of Commerce in Abuja, Nigeria.">
+  <meta property="og:image" content="https://danitex24.github.io/wdd231/chamber/images/og-default.svg">
+  <meta property="og:url" content="https://danitex24.github.io/wdd231/chamber/directory.html">
+  <meta property="og:site_name" content="Abuja Chamber of Commerce">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-wrap">
+      <a class="brand" href="directory.html">
+        <img src="images/favicon.svg" alt="" width="38" height="38">
+        <span class="brand-text">
+          <span class="brand-name">Abuja Chamber</span>
+          <span class="brand-tag">of Commerce</span>
+        </span>
+      </a>
+
+      <button id="menu" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav">&#9776;</button>
+
+      <nav id="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html" class="active" aria-current="page">Directory</a>
+        <a href="join.html">Join</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h1>Member Directory</h1>
+      <p>Explore the businesses and organizations that belong to the Abuja Chamber of Commerce. Switch between a grid and a list view to find members by name, industry, or membership level.</p>
+    </section>
+
+    <div class="view-buttons" role="group" aria-label="View options">
+      <span>View:</span>
+      <button id="gridView" type="button" class="active" aria-pressed="true">Grid</button>
+      <button id="listView" type="button" aria-pressed="false">List</button>
+    </div>
+
+    <section id="directory" aria-live="polite" aria-label="Chamber members"></section>
+  </main>
+
+  <footer>
+    <div class="footer-wrap">
+      <div class="footer-contact">
+        <p class="name">Abuja Chamber of Commerce</p>
+        <p>Plot 14 Constitution Avenue, Central Area, Abuja, Nigeria</p>
+        <p>Phone: +234 800 123 4567</p>
+        <p>Email: info@abujachamber.example.com</p>
+      </div>
+      <div class="footer-dev">
+        <p>Daniel Abughdyer</p>
+        <p>WDD 231 &middot; Web Frontend Development</p>
+        <p>&copy; <span id="currentyear"></span> Abuja Chamber of Commerce</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

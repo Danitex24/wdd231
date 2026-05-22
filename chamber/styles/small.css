@@ -1,0 +1,396 @@
+/* Small / mobile-first base styles for the Abuja Chamber of Commerce site */
+
+:root {
+  --primary: #006b3f;
+  --primary-dark: #013d26;
+  --accent: #f4b400;
+  --accent-dark: #c08a00;
+  --background: #f8f9fa;
+  --surface: #ffffff;
+  --text: #1a1a1a;
+  --text-muted: #4a4a4a;
+  --border: #d4d8dd;
+  --shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  --radius: 0.6rem;
+  --max-width: 1100px;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 1.7rem;
+  margin-bottom: 0.75rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 0.75rem;
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Header ---------- */
+
+header {
+  background: var(--primary);
+  color: #ffffff;
+  position: relative;
+}
+
+.header-wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.85rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.brand img {
+  width: 38px;
+  height: 38px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-text .brand-name {
+  font-size: 1rem;
+}
+
+.brand-text .brand-tag {
+  font-size: 0.75rem;
+  opacity: 0.85;
+  font-weight: 400;
+}
+
+#menu {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.65rem;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+#menu:hover {
+  background: var(--accent);
+  color: #111111;
+  border-color: var(--accent);
+}
+
+/* ---------- Navigation ---------- */
+
+nav {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  background: var(--primary-dark);
+  border-radius: var(--radius);
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+nav.open {
+  display: flex;
+}
+
+nav a {
+  color: #ffffff;
+  padding: 0.65rem 0.8rem;
+  border-radius: 0.3rem;
+}
+
+nav a:hover {
+  background: var(--accent);
+  color: #111111;
+  text-decoration: none;
+}
+
+nav a.active {
+  background: var(--accent);
+  color: #111111;
+  font-weight: 700;
+}
+
+/* ---------- Main ---------- */
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.page-intro {
+  margin-bottom: 1rem;
+}
+
+/* ---------- View toggle buttons ---------- */
+
+.view-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.view-buttons span {
+  font-weight: 600;
+  margin-right: 0.25rem;
+}
+
+.view-buttons button {
+  background: var(--surface);
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.35rem;
+  font-weight: 700;
+}
+
+.view-buttons button:hover {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.view-buttons button.active {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+/* ---------- Directory ---------- */
+
+#directory {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.member-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.85rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.member-card p {
+  margin: 0;
+}
+
+.member-card img {
+  width: 100%;
+  max-width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 0.4rem;
+  align-self: stretch;
+  background: #eef2f3;
+  margin-bottom: 0.35rem;
+}
+
+.member-card h2 {
+  color: var(--primary);
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.member-card .industry {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.1rem;
+}
+
+.member-card .description {
+  font-size: 0.9rem;
+}
+
+.member-card .level {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #111111;
+  background: #e5e7eb;
+  width: fit-content;
+}
+
+.member-card .level.member {
+  background: #d1d5db;
+}
+
+.member-card .level.silver {
+  background: #c0c5cc;
+  color: #111111;
+}
+
+.member-card .level.gold {
+  background: var(--accent);
+  color: #111111;
+}
+
+.member-card a.site {
+  margin-top: auto;
+  background: var(--primary);
+  color: #ffffff;
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.35rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  width: fit-content;
+}
+
+.member-card a.site:hover {
+  background: var(--accent);
+  color: #111111;
+  text-decoration: none;
+}
+
+/* ---------- List view ---------- */
+
+#directory.list {
+  display: block;
+}
+
+#directory.list .member-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 1rem;
+  box-shadow: none;
+  border-radius: 0.4rem;
+  background: var(--surface);
+}
+
+#directory.list .member-card:nth-child(odd) {
+  background: #eef3f0;
+}
+
+#directory.list .member-card img {
+  display: none;
+}
+
+#directory.list .member-card h2 {
+  font-size: 1rem;
+  margin-bottom: 0.15rem;
+}
+
+#directory.list .member-card .industry {
+  display: none;
+}
+
+#directory.list .member-card .description {
+  display: none;
+}
+
+#directory.list .member-card a.site {
+  margin-top: 0.35rem;
+  background: none;
+  color: var(--primary);
+  padding: 0;
+  font-weight: 600;
+}
+
+#directory.list .member-card a.site:hover {
+  text-decoration: underline;
+  background: none;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  background: #111111;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+.footer-wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.footer-contact p,
+.footer-dev p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-contact .name {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.footer-dev {
+  border-top: 1px solid #333333;
+  padding-top: 0.75rem;
+}
+
+.footer-dev p:first-child {
+  font-weight: 700;
+}

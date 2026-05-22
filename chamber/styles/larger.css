@@ -1,0 +1,60 @@
+/* Larger-screen styles for the Abuja Chamber of Commerce site */
+
+@media (min-width: 40rem) {
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+  }
+
+  .header-wrap {
+    flex-wrap: nowrap;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  nav {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    gap: 0.25rem;
+  }
+
+  nav a {
+    padding: 0.55rem 0.85rem;
+  }
+
+  #directory {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-wrap {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: start;
+  }
+
+  .footer-dev {
+    border-top: none;
+    border-left: 1px solid #333333;
+    padding-top: 0;
+    padding-left: 1.5rem;
+    text-align: right;
+  }
+}
+
+@media (min-width: 60rem) {
+  #directory {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .member-card img {
+    height: 130px;
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "members": [
+    {
+      "name": "Capital Tech Hub",
+      "address": "12 Aminu Kano Crescent, Wuse 2, Abuja",
+      "phone": "+234 801 111 2233",
+      "website": "https://capitaltechhub.example.com",
+      "image": "capital-tech-hub.svg",
+      "level": 3,
+      "industry": "Information Technology",
+      "founded": 2014,
+      "description": "Software training and digital business solutions for growing companies."
+    },
+    {
+      "name": "Green Market Foods",
+      "address": "45 Ahmadu Bello Way, Garki, Abuja",
+      "phone": "+234 802 222 3344",
+      "website": "https://greenmarketfoods.example.com",
+      "image": "green-market-foods.svg",
+      "level": 2,
+      "industry": "Agriculture & Food",
+      "founded": 2010,
+      "description": "Fresh produce supply, agricultural products, and farm-to-table services."
+    },
+    {
+      "name": "Unity Logistics",
+      "address": "8 Olusegun Obasanjo Way, Utako, Abuja",
+      "phone": "+234 803 333 4455",
+      "website": "https://unitylogistics.example.com",
+      "image": "unity-logistics.svg",
+      "level": 3,
+      "industry": "Logistics & Delivery",
+      "founded": 2008,
+      "description": "Business logistics, freight forwarding, and same-day delivery in the FCT."
+    },
+    {
+      "name": "Abuja Creative Studio",
+      "address": "21 Aguiyi Ironsi Street, Maitama, Abuja",
+      "phone": "+234 804 444 5566",
+      "website": "https://abujacreativestudio.example.com",
+      "image": "abuja-creative-studio.svg",
+      "level": 2,
+      "industry": "Media & Design",
+      "founded": 2016,
+      "description": "Branding, graphic design, photography, and media production."
+    },
+    {
+      "name": "Northgate Consulting",
+      "address": "Plot 14 Constitution Avenue, Central Area, Abuja",
+      "phone": "+234 805 555 6677",
+      "website": "https://northgateconsulting.example.com",
+      "image": "northgate-consulting.svg",
+      "level": 1,
+      "industry": "Business Advisory",
+      "founded": 2012,
+      "description": "Business advisory, training, and community development support."
+    },
+    {
+      "name": "Prime Build Services",
+      "address": "33 Jabi Lake Road, Jabi, Abuja",
+      "phone": "+234 806 666 7788",
+      "website": "https://primebuild.example.com",
+      "image": "prime-build-services.svg",
+      "level": 3,
+      "industry": "Construction",
+      "founded": 2007,
+      "description": "Construction, facility management, and property maintenance."
+    },
+    {
+      "name": "Sahara Health Clinic",
+      "address": "7 Yakubu Gowon Crescent, Asokoro, Abuja",
+      "phone": "+234 807 777 8899",
+      "website": "https://saharahealthclinic.example.com",
+      "image": "sahara-health-clinic.svg",
+      "level": 2,
+      "industry": "Healthcare",
+      "founded": 2013,
+      "description": "Family healthcare, diagnostics, and preventive medicine services."
+    },
+    {
+      "name": "Bluewave Travels",
+      "address": "19 Adetokunbo Ademola Crescent, Wuse 2, Abuja",
+      "phone": "+234 808 888 9900",
+      "website": "https://bluewavetravels.example.com",
+      "image": "bluewave-travels.svg",
+      "level": 1,
+      "industry": "Travel & Tourism",
+      "founded": 2015,
+      "description": "Travel booking, tourism packages, and corporate trip planning."
+    }
+  ]
+}
