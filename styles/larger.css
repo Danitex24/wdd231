@@ -1,0 +1,59 @@
+/* Larger-screen styles (≥640px) */
+
+@media (min-width: 640px) {
+
+  #menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 0.25rem;
+  }
+
+  nav a {
+    border-top: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+  }
+
+  main > h1 {
+    font-size: 2rem;
+  }
+
+  .home-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  .home-grid .courses-card {
+    grid-column: 1 / -1;
+  }
+
+  .course-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .photo-card .photo-frame {
+    padding: 1.25rem;
+  }
+
+}
+
+@media (min-width: 960px) {
+
+  main {
+    padding: 1.5rem;
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+  }
+
+  .brand-name {
+    font-size: 1.25rem;
+  }
+}
