@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Abuja Chamber of Commerce | Home</title>
+  <meta name="description" content="The Abuja Chamber of Commerce connects local businesses through networking, advocacy, events, and resources in Nigeria's capital.">
+  <meta name="author" content="Daniel Abughdyer">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abuja Chamber of Commerce | Home">
+  <meta property="og:description" content="The Abuja Chamber of Commerce connects local businesses through networking, advocacy, events, and resources in Nigeria's capital.">
+  <meta property="og:image" content="https://danitex24.github.io/wdd231/chamber/images/og-default.jpg">
+  <meta property="og:url" content="https://danitex24.github.io/wdd231/chamber/index.html">
+  <meta property="og:site_name" content="Abuja Chamber of Commerce">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/index.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-wrap">
+      <a class="brand" href="index.html">
+        <img src="images/favicon.png" alt="" width="38" height="38">
+        <span class="brand-text">
+          <span class="brand-name">Abuja Chamber</span>
+          <span class="brand-tag">of Commerce</span>
+        </span>
+      </a>
+
+      <button id="menu" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav">&#9776;</button>
+
+      <nav id="nav" aria-label="Primary">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-img" src="images/hero-abuja.jpg" alt="Abuja city skyline at dusk" width="1280" height="560">
+      <div class="hero-overlay">
+        <h1>Grow Your Business in Nigeria's Capital</h1>
+        <p>Join a thriving community of entrepreneurs, investors, and organizations shaping the future of Abuja.</p>
+        <a class="cta-button" href="join.html">Join the Chamber</a>
+      </div>
+    </section>
+
+    <div class="home-grid">
+      <section class="card events-card" aria-labelledby="events-heading">
+        <h2 id="events-heading">Upcoming Events</h2>
+        <article class="event">
+          <img src="images/event-workshop.jpg" alt="" loading="lazy" width="600" height="400">
+          <div>
+            <h3>Business Growth Workshop</h3>
+            <p class="event-date">Saturday, June 13, 2026 &middot; 10:00 AM</p>
+            <p>Practical sessions on digital marketing, finance, and visibility for Abuja entrepreneurs.</p>
+          </div>
+        </article>
+        <article class="event">
+          <img src="images/event-networking.jpg" alt="" loading="lazy" width="600" height="400">
+          <div>
+            <h3>Monthly Members Networking</h3>
+            <p class="event-date">Thursday, June 25, 2026 &middot; 6:00 PM</p>
+            <p>Connect with chamber members across industries over light refreshments at the central pavilion.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="card weather-card" aria-labelledby="weather-heading">
+        <h2 id="weather-heading">Abuja Weather</h2>
+        <div id="current-weather" class="current-weather" aria-live="polite">
+          <p class="weather-loading">Loading current weather&hellip;</p>
+        </div>
+        <h3>3-Day Forecast</h3>
+        <div id="forecast" class="forecast" aria-live="polite">
+          <p class="weather-loading">Loading forecast&hellip;</p>
+        </div>
+      </section>
+    </div>
+
+    <section class="spotlights-section" aria-labelledby="spotlights-heading">
+      <h2 id="spotlights-heading">Member Spotlights</h2>
+      <p>Featured gold and silver members of the Abuja Chamber of Commerce.</p>
+      <div id="spotlights" class="spotlights" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-wrap">
+      <div class="footer-contact">
+        <p class="name">Abuja Chamber of Commerce</p>
+        <p>Plot 14 Constitution Avenue, Central Area, Abuja, Nigeria</p>
+        <p>Phone: +234 800 123 4567</p>
+        <p>Email: info@abujachamber.example.com</p>
+      </div>
+      <div class="footer-dev">
+        <p>Daniel Abughdyer</p>
+        <p>WDD231 &middot; Web Frontend Development</p>
+        <p>&copy; <span id="currentyear"></span> Abuja Chamber of Commerce</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
