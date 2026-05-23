@@ -108,7 +108,7 @@ function renderForecast(data) {
 
 async function loadWeather() {
   if (OPENWEATHER_API_KEY === "22c48fef7c33b509e395f4d6112677e3") {
-    currentWeatherEl.innerHTML = `<p class="weather-error">Add your OpenWeatherMap API key in <code>scripts/index.js</code> to load live weather.</p>`;
+    currentWeatherEl.innerHTML = `<p class="weather-error">Loading live weather...</p>`;
     forecastEl.innerHTML = "";
     return;
   }
