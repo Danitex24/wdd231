@@ -8,13 +8,16 @@
   <meta name="description" content="Browse the official directory of businesses and organizations that are members of the Abuja Chamber of Commerce in Abuja, Nigeria.">
   <meta name="author" content="Daniel Abughdyer">
 
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-  <link rel="alternate icon" href="images/favicon.svg">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Abuja Chamber of Commerce | Member Directory">
   <meta property="og:description" content="Browse the official directory of businesses and organizations that are members of the Abuja Chamber of Commerce in Abuja, Nigeria.">
-  <meta property="og:image" content="https://danitex24.github.io/wdd231/chamber/images/og-default.svg">
+  <meta property="og:image" content="https://danitex24.github.io/wdd231/chamber/images/og-default.jpg">
   <meta property="og:url" content="https://danitex24.github.io/wdd231/chamber/directory.html">
   <meta property="og:site_name" content="Abuja Chamber of Commerce">
 
@@ -28,7 +31,7 @@
   <header>
     <div class="header-wrap">
       <a class="brand" href="directory.html">
-        <img src="images/favicon.svg" alt="" width="38" height="38">
+        <img src="images/favicon.png" alt="" width="38" height="38">
         <span class="brand-text">
           <span class="brand-name">Abuja Chamber</span>
           <span class="brand-tag">of Commerce</span>
@@ -53,9 +56,8 @@
     </section>
 
     <div class="view-buttons" role="group" aria-label="View options">
-      <span>View:</span>
-      <button id="gridView" type="button" class="active" aria-pressed="true">Grid</button>
-      <button id="listView" type="button" aria-pressed="false">List</button>
+      <button id="gridView" type="button" class="active" aria-pressed="true">Grid View</button>
+      <button id="listView" type="button" aria-pressed="false">List View</button>
     </div>
 
     <section id="directory" aria-live="polite" aria-label="Chamber members"></section>
@@ -71,7 +73,7 @@
       </div>
       <div class="footer-dev">
         <p>Daniel Abughdyer</p>
-        <p>WDD 231 &middot; Web Frontend Development</p>
+        <p>WDD231 &middot; Web Frontend Development</p>
         <p>&copy; <span id="currentyear"></span> Abuja Chamber of Commerce</p>
         <p id="lastModified"></p>
       </div>
