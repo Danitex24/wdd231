@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit an AI Tool</title>
+  <meta name="description" content="Suggest a helpful AI productivity tool for the AI Productivity Hub project.">
+  <meta name="author" content="Daniel Abughdyer">
+  <meta property="og:title" content="Submit an AI Tool">
+  <meta property="og:description" content="Suggest a helpful AI productivity tool for the AI Productivity Hub project.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero.svg">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<header>
+    <div class="header-inner">
+      <a class="logo" href="index.html">AI <span>Productivity</span> Hub</a>
+      <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="tools.html">AI Tools</a>
+        <a class="active" href="submit.html">Submit Tool</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1>Submit an AI Tool</h1>
+    <p>Use this form to suggest another AI tool that could be added to the directory.</p>
+
+    <section class="form-card">
+      <form id="suggestion-form" method="get" action="thanks.html">
+        <div class="form-group">
+          <label for="tool-name">Tool Name</label>
+          <input type="text" id="tool-name" name="tool-name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="category">Tool Category</label>
+          <select id="category" name="category" required>
+            <option value="">Choose a category</option>
+            <option value="Writing">Writing</option>
+            <option value="Research">Research</option>
+            <option value="Design">Design</option>
+            <option value="Coding">Coding</option>
+            <option value="Automation">Automation</option>
+            <option value="Audio or Video">Audio or Video</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="reason">Why is this tool useful?</label>
+          <textarea id="reason" name="reason" rows="5" required></textarea>
+        </div>
+
+        <button class="button" type="submit">Submit Tool</button>
+      </form>
+    </section>
+  </main>
+<footer>
+    <p>&copy; <span id="year"></span> AI Productivity Hub | Daniel Abughdyer</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+    <p><a href="attributions.html">Attributions</a> | <a href="#">Video Demonstration Link</a></p>
+  </footer>
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/form.js"></script>
+</body>
+</html>

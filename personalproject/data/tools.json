@@ -1,0 +1,137 @@
+[
+  {
+    "name": "ChatGPT",
+    "category": "Writing & Research",
+    "description": "AI assistant for brainstorming, writing, coding help, and learning support.",
+    "pricing": "Free / Paid",
+    "website": "https://chat.openai.com",
+    "bestFor": "Students, writers, developers",
+    "rating": 4.9
+  },
+  {
+    "name": "Claude",
+    "category": "Writing & Analysis",
+    "description": "AI assistant designed for long-form writing, summarizing, and document analysis.",
+    "pricing": "Free / Paid",
+    "website": "https://claude.ai",
+    "bestFor": "Researchers and writers",
+    "rating": 4.8
+  },
+  {
+    "name": "Perplexity",
+    "category": "Research",
+    "description": "AI-powered answer engine that helps users research topics with web-based citations.",
+    "pricing": "Free / Paid",
+    "website": "https://www.perplexity.ai",
+    "bestFor": "Fast research",
+    "rating": 4.7
+  },
+  {
+    "name": "Canva AI",
+    "category": "Design",
+    "description": "Design platform with AI features for creating graphics, presentations, and social media posts.",
+    "pricing": "Free / Paid",
+    "website": "https://www.canva.com",
+    "bestFor": "Designers and content creators",
+    "rating": 4.6
+  },
+  {
+    "name": "Grammarly",
+    "category": "Writing",
+    "description": "Writing assistant that improves grammar, clarity, tone, and spelling.",
+    "pricing": "Free / Paid",
+    "website": "https://www.grammarly.com",
+    "bestFor": "Students and professionals",
+    "rating": 4.5
+  },
+  {
+    "name": "Notion AI",
+    "category": "Productivity",
+    "description": "AI workspace assistant for notes, summaries, project planning, and task management.",
+    "pricing": "Paid",
+    "website": "https://www.notion.so/product/ai",
+    "bestFor": "Teams and organizers",
+    "rating": 4.5
+  },
+  {
+    "name": "GitHub Copilot",
+    "category": "Coding",
+    "description": "AI pair programmer that suggests code and helps developers write software faster.",
+    "pricing": "Paid",
+    "website": "https://github.com/features/copilot",
+    "bestFor": "Developers",
+    "rating": 4.8
+  },
+  {
+    "name": "Gemini",
+    "category": "General Assistant",
+    "description": "Google AI assistant for writing, research, planning, and productivity tasks.",
+    "pricing": "Free / Paid",
+    "website": "https://gemini.google.com",
+    "bestFor": "Google users",
+    "rating": 4.4
+  },
+  {
+    "name": "Microsoft Copilot",
+    "category": "Office Productivity",
+    "description": "AI assistant integrated with Microsoft tools for documents, spreadsheets, and productivity.",
+    "pricing": "Free / Paid",
+    "website": "https://copilot.microsoft.com",
+    "bestFor": "Office users",
+    "rating": 4.4
+  },
+  {
+    "name": "Runway",
+    "category": "Video",
+    "description": "AI creative suite for video generation, editing, and visual storytelling.",
+    "pricing": "Free / Paid",
+    "website": "https://runwayml.com",
+    "bestFor": "Video creators",
+    "rating": 4.6
+  },
+  {
+    "name": "Midjourney",
+    "category": "Image Generation",
+    "description": "AI image generation tool for creating high-quality visual artwork from prompts.",
+    "pricing": "Paid",
+    "website": "https://www.midjourney.com",
+    "bestFor": "Artists and designers",
+    "rating": 4.7
+  },
+  {
+    "name": "ElevenLabs",
+    "category": "Audio",
+    "description": "AI voice generation platform for realistic text-to-speech and voice projects.",
+    "pricing": "Free / Paid",
+    "website": "https://elevenlabs.io",
+    "bestFor": "Audio creators",
+    "rating": 4.6
+  },
+  {
+    "name": "Otter.ai",
+    "category": "Transcription",
+    "description": "AI meeting assistant that records, transcribes, and summarizes meetings.",
+    "pricing": "Free / Paid",
+    "website": "https://otter.ai",
+    "bestFor": "Meetings and interviews",
+    "rating": 4.3
+  },
+  {
+    "name": "QuillBot",
+    "category": "Writing",
+    "description": "AI paraphrasing and summarizing tool for improving written content.",
+    "pricing": "Free / Paid",
+    "website": "https://quillbot.com",
+    "bestFor": "Students",
+    "rating": 4.2
+  },
+  {
+    "name": "Zapier AI",
+    "category": "Automation",
+    "description": "Automation platform with AI tools for connecting apps and automating workflows.",
+    "pricing": "Free / Paid",
+    "website": "https://zapier.com/ai",
+    "bestFor": "Business automation",
+    "rating": 4.4
+  }
+]

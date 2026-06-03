@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Abuja Chamber of Commerce | Join</title>
+  <meta name="description" content="Apply to join the Abuja Chamber of Commerce. Choose a membership level and submit your business application online.">
+  <meta name="author" content="Daniel Abughdyer">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abuja Chamber of Commerce | Join">
+  <meta property="og:description" content="Apply to join the Abuja Chamber of Commerce. Choose a membership level and submit your business application online.">
+  <meta property="og:image" content="https://danitex24.github.io/wdd231/chamber/images/og-default.jpg">
+  <meta property="og:url" content="https://danitex24.github.io/wdd231/chamber/join.html">
+  <meta property="og:site_name" content="Abuja Chamber of Commerce">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/join.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-wrap">
+      <a class="brand" href="index.html">
+        <img src="images/favicon.png" alt="" width="38" height="38">
+        <span class="brand-text">
+          <span class="brand-name">Abuja Chamber</span>
+          <span class="brand-tag">of Commerce</span>
+        </span>
+      </a>
+
+      <button id="menu" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav">&#9776;</button>
+
+      <nav id="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html" class="active" aria-current="page">Join</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h1>Join the Chamber</h1>
+      <p>Become a member of the Abuja Chamber of Commerce. Complete the application below and choose the membership level that fits your business. We'll review your information and reach out shortly.</p>
+    </section>
+
+    <div class="join-grid">
+      <section class="form-section" aria-labelledby="form-heading">
+        <h2 id="form-heading">Membership Application</h2>
+
+        <form id="membership-form" method="get" action="thankyou.html" novalidate>
+
+          <label>
+            <span>First Name<span class="required">*</span></span>
+            <input
+              type="text"
+              name="first-name"
+              title="Your first name"
+              autocomplete="given-name"
+              required>
+          </label>
+
+          <label>
+            <span>Last Name<span class="required">*</span></span>
+            <input
+              type="text"
+              name="last-name"
+              title="Your last name"
+              autocomplete="family-name"
+              required>
+          </label>
+
+          <label>
+            <span>Title in Organization</span>
+            <input
+              type="text"
+              name="org-title"
+              title="Your role within your organization (letters, spaces, and hyphens only — minimum 7 characters)"
+              autocomplete="organization-title"
+              pattern="[A-Za-z\s\-]{7,}">
+          </label>
+
+          <label>
+            <span>Email<span class="required">*</span></span>
+            <input
+              type="email"
+              name="email"
+              title="A valid email address we can reach you at"
+              autocomplete="email"
+              placeholder="you@example.com"
+              required>
+          </label>
+
+          <label>
+            <span>Mobile Phone<span class="required">*</span></span>
+            <input
+              type="tel"
+              name="mobile"
+              title="Your mobile phone number"
+              autocomplete="tel"
+              placeholder="+234 800 123 4567"
+              required>
+          </label>
+
+          <label>
+            <span>Business / Organization Name<span class="required">*</span></span>
+            <input
+              type="text"
+              name="organization"
+              title="The legal name of your business or organization"
+              autocomplete="organization"
+              required>
+          </label>
+
+          <label>
+            <span>Membership Level</span>
+            <select name="membership-level" title="Select the membership level you would like to apply for">
+              <option value="np">NP Membership — Non-Profit (No Fee)</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Business Description</span>
+            <textarea
+              name="description"
+              title="A short description of what your business does"
+              rows="4"
+              placeholder="Tell us about your business..."></textarea>
+          </label>
+
+          <input type="hidden" name="timestamp" id="timestamp">
+
+          <input type="submit" value="Submit Application" class="cta-button">
+        </form>
+      </section>
+
+      <aside class="levels-section" aria-labelledby="levels-heading">
+        <h2 id="levels-heading">Membership Levels</h2>
+
+        <div class="level-card level-np">
+          <h3>NP Membership</h3>
+          <p>For non-profit organizations. No membership fee.</p>
+          <a href="#np-modal" class="level-link" data-modal="np-modal">Learn more</a>
+        </div>
+
+        <div class="level-card level-bronze">
+          <h3>Bronze Membership</h3>
+          <p>Entry-level benefits for new and growing businesses.</p>
+          <a href="#bronze-modal" class="level-link" data-modal="bronze-modal">Learn more</a>
+        </div>
+
+        <div class="level-card level-silver">
+          <h3>Silver Membership</h3>
+          <p>Expanded benefits, training, and visibility.</p>
+          <a href="#silver-modal" class="level-link" data-modal="silver-modal">Learn more</a>
+        </div>
+
+        <div class="level-card level-gold">
+          <h3>Gold Membership</h3>
+          <p>Maximum visibility and premium chamber benefits.</p>
+          <a href="#gold-modal" class="level-link" data-modal="gold-modal">Learn more</a>
+        </div>
+      </aside>
+    </div>
+
+    <dialog id="np-modal" class="level-modal" aria-labelledby="np-modal-title">
+      <h3 id="np-modal-title">NP Membership Benefits</h3>
+      <ul>
+        <li>No membership fee for registered non-profits</li>
+        <li>Listing in the chamber member directory</li>
+        <li>Access to monthly networking events</li>
+        <li>Quarterly chamber newsletter</li>
+      </ul>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="bronze-modal" class="level-modal" aria-labelledby="bronze-modal-title">
+      <h3 id="bronze-modal-title">Bronze Membership Benefits</h3>
+      <ul>
+        <li>Everything in NP Membership</li>
+        <li>Discounted entry to chamber training workshops</li>
+        <li>Two-event-per-year discount on premium events</li>
+        <li>Logo placement on the chamber sponsors page</li>
+      </ul>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="silver-modal" class="level-modal" aria-labelledby="silver-modal-title">
+      <h3 id="silver-modal-title">Silver Membership Benefits</h3>
+      <ul>
+        <li>Everything in Bronze Membership</li>
+        <li>Quarterly spotlight rotation on the chamber home page</li>
+        <li>Free entry to two premium chamber events per year</li>
+        <li>Advertising in chamber newsletters</li>
+        <li>Priority access to chamber-hosted business clinics</li>
+      </ul>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="gold-modal" class="level-modal" aria-labelledby="gold-modal-title">
+      <h3 id="gold-modal-title">Gold Membership Benefits</h3>
+      <ul>
+        <li>Everything in Silver Membership</li>
+        <li>Permanent spotlight position on the chamber home page</li>
+        <li>Free entry to all chamber events for two delegates</li>
+        <li>Featured advertising across chamber channels</li>
+        <li>Dedicated chamber account manager</li>
+        <li>Early access to government and trade liaison briefings</li>
+      </ul>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+  </main>
+
+  <footer>
+    <div class="footer-wrap">
+      <div class="footer-contact">
+        <p class="name">Abuja Chamber of Commerce</p>
+        <p>Plot 14 Constitution Avenue, Central Area, Abuja, Nigeria</p>
+        <p>Phone: +234 800 123 4567</p>
+        <p>Email: info@abujachamber.example.com</p>
+      </div>
+      <div class="footer-dev">
+        <p>Daniel Abughdyer</p>
+        <p>WDD231 &middot; Web Frontend Development</p>
+        <p>&copy; <span id="currentyear"></span> Abuja Chamber of Commerce</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

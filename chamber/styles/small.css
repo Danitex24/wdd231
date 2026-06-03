@@ -653,3 +653,254 @@ footer {
 .spotlight-card .level.gold {
   background: var(--accent);
 }
+
+/* Join page */
+
+.join-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.25rem;
+}
+
+.form-section h2 {
+  color: var(--primary);
+  margin-top: 0;
+}
+
+#membership-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+#membership-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+#membership-form label .required {
+  color: #b91c1c;
+  margin-left: 0.15rem;
+}
+
+#membership-form input,
+#membership-form select,
+#membership-form textarea {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 0.35rem;
+  font: inherit;
+  background: #ffffff;
+  color: var(--text);
+}
+
+#membership-form input:focus,
+#membership-form select:focus,
+#membership-form textarea:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 1px;
+  border-color: var(--primary);
+}
+
+#membership-form input:required:invalid:not(:placeholder-shown),
+#membership-form input:invalid:not(:placeholder-shown) {
+  border-color: #b91c1c;
+}
+
+#membership-form textarea {
+  resize: vertical;
+  min-height: 5.5rem;
+}
+
+#membership-form input[type="submit"] {
+  background: var(--primary);
+  color: #ffffff;
+  border: none;
+  font-weight: 700;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  margin-top: 0.25rem;
+  width: fit-content;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+#membership-form input[type="submit"]:hover,
+#membership-form input[type="submit"]:focus {
+  background: var(--accent);
+  color: #111111;
+}
+
+/* Membership level cards */
+
+.levels-section h2 {
+  color: var(--primary);
+  margin-top: 0;
+}
+
+.level-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem 1.1rem;
+  margin-bottom: 1rem;
+  /* border-left: 6px solid var(--primary); /*
+
+  /* Animated initial reveal */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: levelCardIn 0.7s ease forwards;
+}
+
+.level-card h3 {
+  margin: 0 0 0.35rem;
+  color: var(--primary);
+}
+
+.level-card p {
+  margin: 0 0 0.6rem;
+  font-size: 0.92rem;
+}
+
+.level-card .level-link {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--primary);
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+.level-card .level-link:hover,
+.level-card .level-link:focus {
+  border-bottom-color: var(--accent);
+  text-decoration: none;
+}
+
+.level-card.level-np {
+  animation-delay: 0.05s;
+}
+
+.level-card.level-bronze {
+  animation-delay: 0.2s;
+}
+
+.level-card.level-silver {
+  animation-delay: 0.35s;
+}
+
+.level-card.level-gold {
+  animation-delay: 0.5s;
+}
+
+@keyframes levelCardIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .level-card {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+
+/* Membership modals */
+
+.level-modal {
+  border: none;
+  border-radius: var(--radius);
+  padding: 1.25rem 1.25rem 1rem;
+  max-width: 32rem;
+  width: calc(100% - 2rem);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.level-modal::backdrop {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.level-modal h3 {
+  color: var(--primary);
+  margin-top: 0;
+}
+
+.level-modal ul {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+
+.level-modal li {
+  margin-bottom: 0.35rem;
+}
+
+.level-modal .close-modal {
+  background: var(--primary);
+  color: #ffffff;
+  border: none;
+  padding: 0.55rem 1rem;
+  border-radius: 0.35rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.level-modal .close-modal:hover,
+.level-modal .close-modal:focus {
+  background: var(--accent);
+  color: #111111;
+}
+
+/* Thank-you page */
+
+.thankyou-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.thankyou-card h2 {
+  color: var(--primary);
+  margin-top: 0;
+}
+
+.application-summary dl {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.25rem 0.75rem;
+  margin: 0 0 1rem;
+}
+
+.application-summary dt {
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.application-summary dd {
+  margin: 0 0 0.5rem;
+  padding: 0;
+  color: var(--text);
+}
+
+.application-summary .loading {
+  font-style: italic;
+  color: var(--text-muted);
+}

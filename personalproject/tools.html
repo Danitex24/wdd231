@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Tools Directory</title>
+  <meta name="description" content="Browse a dynamic directory of artificial intelligence productivity tools.">
+  <meta name="author" content="Daniel Abughdyer">
+  <meta property="og:title" content="AI Tools Directory">
+  <meta property="og:description" content="Browse a dynamic directory of artificial intelligence productivity tools.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero.svg">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<header>
+    <div class="header-inner">
+      <a class="logo" href="index.html">AI <span>Productivity</span> Hub</a>
+      <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="tools.html">AI Tools</a>
+        <a href="submit.html">Submit Tool</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1>AI Tools Directory</h1>
+    <p>Use the search and category filter to explore tools. Select details to open an accessible modal dialog.</p>
+
+    <section class="filters" aria-label="Tool filters">
+      <div>
+        <label for="search">Search Tools</label>
+        <input type="search" id="search" placeholder="Search by name, category, or description">
+      </div>
+      <div>
+        <label for="category">Filter by Category</label>
+        <select id="category">
+          <option value="all">All Categories</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="tools-container" class="tools-grid" aria-live="polite"></section>
+
+    <dialog id="tool-modal" aria-labelledby="modal-title">
+      <div class="modal-content">
+        <div id="modal-body"></div>
+        <button id="close-modal" class="button secondary">Close</button>
+      </div>
+    </dialog>
+  </main>
+<footer>
+    <p>&copy; <span id="year"></span> AI Productivity Hub | Daniel Abughdyer</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+    <p><a href="attributions.html">Attributions</a> | <a href="#">Video Demonstration Link</a></p>
+  </footer>
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/tools.js"></script>
+</body>
+</html>

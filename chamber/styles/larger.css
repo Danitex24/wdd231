@@ -97,3 +97,26 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Join page: form left, level cards right */
+@media (min-width: 40rem) {
+  .join-grid {
+    grid-template-columns: 1.6fr 1fr;
+    align-items: start;
+  }
+
+  .application-summary dl {
+    grid-template-columns: max-content 1fr;
+    column-gap: 1.5rem;
+  }
+
+  .application-summary dd {
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  .join-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tool Submission Result</title>
+  <meta name="description" content="View the submitted AI tool suggestion form data.">
+  <meta name="author" content="Daniel Abughdyer">
+  <meta property="og:title" content="Tool Submission Result">
+  <meta property="og:description" content="View the submitted AI tool suggestion form data.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero.svg">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<header>
+    <div class="header-inner">
+      <a class="logo" href="index.html">AI <span>Productivity</span> Hub</a>
+      <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="tools.html">AI Tools</a>
+        <a class="active" href="submit.html">Submit Tool</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1>Thank You</h1>
+    <p>Your form data is displayed below.</p>
+    <section id="form-result" class="result-box" aria-live="polite"></section>
+    <p><a class="button" href="submit.html">Submit Another Tool</a></p>
+  </main>
+<footer>
+    <p>&copy; <span id="year"></span> AI Productivity Hub | Daniel Abughdyer</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+    <p><a href="attributions.html">Attributions</a> | <a href="#">Video Demonstration Link</a></p>
+  </footer>
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/thanks.js"></script>
+</body>
+</html>
