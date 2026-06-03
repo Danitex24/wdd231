@@ -1,4 +1,4 @@
-// Shared header / footer behavior (mirrors the rest of the chamber site)
+// Shared header / footer
 
 const menuBtn = document.querySelector("#menu");
 const navEl = document.querySelector("#nav");
