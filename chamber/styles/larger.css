@@ -120,3 +120,48 @@
     grid-template-columns: 2fr 1fr;
   }
 }
+
+/* Discover page: medium screens (641px - 1024px) */
+@media (min-width: 641px) {
+  .discover-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "card1 card2"
+      "card3 card3"
+      "card4 card5"
+      "card6 card7"
+      "card8 card8";
+  }
+
+  /* Image hover effect — only on non-mobile views */
+  .discover-card figure img {
+    transition: transform 0.4s ease, filter 0.3s ease;
+  }
+
+  .discover-card:hover figure img,
+  .discover-card:focus-within figure img {
+    transform: scale(1.06);
+    filter: saturate(1.15) brightness(1.05);
+  }
+}
+
+/* Discover page: large screens (1025px+) */
+@media (min-width: 1025px) {
+  .discover-gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "card1 card1 card2 card3"
+      "card1 card1 card4 card5"
+      "card6 card7 card8 card8";
+  }
+
+  /* Featured card stretches to fill its 2x2 area */
+  .discover-card[style*="card1"] figure img {
+    height: 100%;
+    min-height: 280px;
+  }
+
+  .discover-card[style*="card1"] {
+    height: 100%;
+  }
+}

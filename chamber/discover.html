@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Discover Abuja</title>
+  <meta name="description" content="Discover eight notable landmarks, parks, and cultural sites that make Abuja, Nigeria a great place to live, visit, and do business.">
+  <meta name="author" content="Daniel Abughdyer">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abuja Chamber of Commerce | Discover Abuja">
+  <meta property="og:description" content="Discover eight notable landmarks, parks, and cultural sites that make Abuja, Nigeria a great place to live, visit, and do business.">
+  <meta property="og:image" content="https://danitex24.github.io/wdd231/chamber/images/og-default.jpg">
+  <meta property="og:url" content="https://danitex24.github.io/wdd231/chamber/discover.html">
+  <meta property="og:site_name" content="Abuja Chamber of Commerce">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/discover.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-wrap">
+      <a class="brand" href="index.html">
+        <img src="images/favicon.png" alt="" width="38" height="38">
+        <span class="brand-text">
+          <span class="brand-name">Abuja Chamber</span>
+          <span class="brand-tag">of Commerce</span>
+        </span>
+      </a>
+
+      <button id="menu" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav">&#9776;</button>
+
+      <nav id="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="discover.html" class="active" aria-current="page">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h1>Discover Abuja</h1>
+      <p>Abuja, Nigeria's capital, is a planned city of green parks, striking landmarks, and growing business districts. Explore eight of our favourite places to start.</p>
+    </section>
+
+    <aside id="visitor-message" class="visitor-message" aria-live="polite">
+      <p class="message-text"></p>
+      <button type="button" class="close-message" aria-label="Dismiss welcome message">&times;</button>
+    </aside>
+
+    <section id="discover-gallery" class="discover-gallery" aria-label="Abuja points of interest"></section>
+  </main>
+
+  <footer>
+    <div class="footer-wrap">
+      <div class="footer-contact">
+        <p class="name">Abuja Chamber of Commerce</p>
+        <p>Plot 14 Constitution Avenue, Central Area, Abuja, Nigeria</p>
+        <p>Phone: +234 800 123 4567</p>
+        <p>Email: info@abujachamber.example.com</p>
+      </div>
+      <div class="footer-dev">
+        <p>Daniel Abughdyer</p>
+        <p>WDD231 &middot; Web Frontend Development</p>
+        <p>&copy; <span id="currentyear"></span> Abuja Chamber of Commerce</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
